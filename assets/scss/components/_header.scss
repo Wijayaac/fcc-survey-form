@@ -1,0 +1,41 @@
+@use "../util/mq";
+
+.sr-only {
+  border: 0;
+  height: 0;
+  width: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 0;
+  overflow: hidden;
+  white-space: nowrap;
+  position: relative;
+  float: left;
+}
+
+.flex {
+  display: flex;
+  gap: var(--gap, 1rem);
+}
+.text--white {
+  color: var(--white);
+}
+.letter-spacing--2 {
+  letter-spacing: 2px;
+}
+.text--uppercase {
+  text-transform: uppercase;
+}
+
+/* Primary Header */
+.header {
+  @extend .flex;
+  margin-top: 2rem;
+  @include mq.mq($from: desktop) {
+    &__logo {
+      margin: 1rem;
+      object-fit: cover;
+      width: 50px;
+    }
+  }
+}

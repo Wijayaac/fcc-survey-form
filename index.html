@@ -13,11 +13,14 @@
 </head>
 
 <body>
-    <header></header>
+    <header class="header">
+        <span class="header__logo">FCC</span>
+    </header>
     <main>
         <section class="form">
-            <h1 class="form__title"></h1>
-            <p class="form__description"></p>
+            <h1 class="form__title" id="title">Developer Journey Survey</h1>
+            <p class="form__description" id="description"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex
+                dolorem impedit expedita tempora rem, mollitia dolorum nulla sapiente dolores magnam!</p>
             <div class="form__wrapper">
                 <form action="" id="survey-form">
                     <div class="input__wrapper">
@@ -63,21 +66,6 @@
                         </label>
                     </div>
                     <div class="input__wrapper">
-                        <p class="form__label input__label">What's your favorite drink's when coded ?</p>
-                        <label for="1-yo">
-                            <input type="radio" class="form__field input__radio" name="experience" id="1-yo" value="1">
-                            1 Years ~ 2 Years
-                        </label>
-                        <label for="2-yo">
-                            <input type="radio" class="form__field input__radio" name="experience" id="2-yo" value="2">
-                            2 Years ~ 3 Years
-                        </label>
-                        <label for="3-yo">
-                            <input type="radio" class="form__field input__radio" name="experience" id="3-yo" value="3">
-                            3 Years >
-                        </label>
-                    </div>
-                    <div class="input__wrapper">
                         <p class="form__label input__label">What's your favorite drink's when coded ?
                             <span class="form__clue">(Check All)</span>
                         </p>
@@ -111,8 +99,10 @@
             </div>
         </section>
     </main>
-    <footer></footer>
-    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+    <footer>
+        <p>Copyright &copy; 2022 - Wijaya | FCC - Survey Form</p>
+    </footer>
+    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
     <script src="/assets/js/app.js" defer></script>
 </body>
 
