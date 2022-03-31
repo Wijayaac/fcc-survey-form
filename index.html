@@ -13,10 +13,10 @@
 </head>
 
 <body>
-    <header class="header">
+    <header class="header container">
         <span class="header__logo">FCC</span>
     </header>
-    <main>
+    <main class="container">
         <section class="form">
             <h1 class="form__title" id="title">Developer Journey Survey</h1>
             <p class="form__description" id="description"> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ex
@@ -39,7 +39,8 @@
                             placeholder="eg: example@domain.com">
                     </div>
                     <div class="input__wrapper">
-                        <label for="dropdown" class="input__label form__label" id="role-label">Pick your Role</label>
+                        <label for="dropdown" class="input__select-label form__label" id="role-label">Pick your
+                            Role</label>
                         <select name="role" id="dropdown" class="form__field input__select">
                             <option value="frontend">Front End Dev</option>
                             <option value="backend">Back End Dev</option>
@@ -47,62 +48,63 @@
                             <option value="mobile">Mobile Dev</option>
                         </select>
                     </div>
-                    <div class="input__wrapper">
-                        <p class="form__label input__label">How Long you've been coded ?</p>
-                        <label for="experience">
-                            <input type="radio" class="form__field input__radio" name="experience" id="experience"
-                                value="1">
-                            1 Years ~ 2 Years
-                        </label>
-                        <label for="experience">
-                            <input type="radio" class="form__field input__radio" name="experience" id="experience"
-                                value="2">
-                            2 Years ~ 3 Years
-                        </label>
-                        <label for="experience">
-                            <input type="radio" class="form__field input__radio" name="experience" id="experience"
-                                value="3">
-                            3 Years >
-                        </label>
+                    <div class="form__group">
+                        <div class="input__wrapper">
+                            <p class="form__label input__radio-label">How Long you've been coded ?</p>
+                            <label for="experience">
+                                <input type="radio" class="form__radio input__radio" name="experience" id="experience"
+                                    value="1">
+                                1 Years ~ 2 Years
+                            </label>
+                            <label for="experience">
+                                <input type="radio" class="form__radio input__radio" name="experience" id="experience"
+                                    value="2">
+                                2 Years ~ 3 Years
+                            </label>
+                            <label for="experience">
+                                <input type="radio" class="form__radio input__radio" name="experience" id="experience"
+                                    value="3">
+                                3 Years >
+                            </label>
+                        </div>
+                        <div class="input__wrapper">
+                            <p class="form__label input__check-label">What's your favorite drink's when coded ?
+                            </p>
+                            <label for="coffee">
+                                <input type="checkbox" class="form__check input__check" name="drink" id="coffee"
+                                    value="coffee">
+                                Coffee
+                            </label>
+                            <label for="tea">
+                                <input type="checkbox" class="form__check input__check" name="drink" id="tea"
+                                    value="tea">
+                                Tea
+                            </label>
+                            <label for="cookee">
+                                <input type="checkbox" class="form__check input__check" name="drink" id="cookee"
+                                    value="cookee">
+                                Cookee
+                            </label>
+                        </div>
                     </div>
                     <div class="input__wrapper">
-                        <p class="form__label input__label">What's your favorite drink's when coded ?
-                            <span class="form__clue">(Check All)</span>
-                        </p>
-                        <label for="coffee">
-                            <input type="checkbox" class="form__field input__check" name="drink" id="coffee"
-                                value="coffee">
-                            Coffee
-                        </label>
-                        <label for="tea">
-                            <input type="checkbox" class="form__field input__check" name="drink" id="tea" value="tea">
-                            Tea
-                        </label>
-                        <label for="cookee">
-                            <input type="checkbox" class="form__field input__check" name="drink" id="cookee"
-                                value="cookee">
-                            Cookee
-                        </label>
-                    </div>
-                    <div class="input__wrapper">
-                        <p class="form__label input__label">Please give us Suggestion
-                            <span class="form__sublabel input__sublabel">Your suggestion very important to us for
-                                improving the services</span>
+                        <p class="form__label input__label">
+                            Comments
                         </p>
                         <textarea name="comment" class="form__field input__area" id="comments" rows="6"
                             placeholder="You can suggest about new features that you wants"></textarea>
                     </div>
-                    <div class="form__wrapper">
+                    <div class="form__btn-wrapper">
                         <button class="form__submit input__btn" type="submit" id="submit">Submit</button>
                     </div>
                 </form>
             </div>
         </section>
     </main>
-    <footer>
+    <footer class="container">
         <p>Copyright &copy; 2022 - Wijaya | FCC - Survey Form</p>
     </footer>
-    <!-- <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script> -->
+    <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
     <script src="/assets/js/app.js" defer></script>
 </body>
 
